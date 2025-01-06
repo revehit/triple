@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+.product{padding-bottom:100px;}
+.brand{padding-bottom:100px;}
+.service{padding-bottom:100px;}
+.brand img{width: 100%;} 
+
+.inner{width:1320px !important;max-width:1644px;}
+
+
+/* 상품리스트 */
+.product_list{width:100%;margin-top:-40px;margin-left:-40px;}
+.product_list li{float:left;width:calc(25% - 20px);margin-top:60px;margin-left:20px;}
+.product_list li > a{display:block;position:relative;}
+.product_list li .img{padding: 80px 0 60px;border:1px solid #ddd;box-sizing:border-box;position:relative;overflow:hidden;}
+.product_list li .img img{transition: all .22s ease-in-out;display:block;margin:0 auto;}
+.product_list li .img .payment_box{position:absolute;bottom:-70px;width:100%;display:flex;justify-content: space-between;transition: all .22s ease-in-out;background:#3f3f3f;}
+.product_list li .img .payment_box > span em{display:block;text-indent:-999999px;font-size:0;position: absolute;top: 50%;left: 50%;    transform: translate(-50%, -50%);}
+.product_list li .img .payment_box > em{width:1px;height:34px;background:#262626;margin-top:18px;}
+.product_list li .img .payment_box .btn_cart, .product_list li .img .payment_box .btn_card{display:block;height:70px;width:50%;position:relative;}
+.product_list li .img .payment_box .btn_cart em{background:url('../../images/common/cart01.png');width:31px;height:25px;}
+.product_list li .img .payment_box .btn_card em{background:url('../../images/common/card01.png');width:30px;height:21px;}
+
+.product_list li .con{padding-top: 30px;}
+.product_list li .con .product_tit{font-size:17px;color:#111;font-weight:600;font-family:"Spoqa Han Sans Neo" !important;}
+.product_list li .con .product_price{font-family:"Spoqa Han Sans Neo" !important;font-weight:400;color:#222;}
+.product_list li .con .product_price span{display:inline-block;}
+.product_list li .con .product_price span + span{margin-left:-6px;}
+.product_list li .con .product_price .percent{font-size: 16px;color:#44b87d;font-weight:600;}
+.product_list li .con .product_price .percent:after{content:'';display:inline-block;width:1px;height:15px;background:#ddd;margin: 0 10px;vertical-align:middle;}
+.product_list li .con .product_price .price{font-size: 16px;font-weight:600;}
+.product_list li .con .product_price .unit{font-size: 15px;text-decoration:line-through;color:#b1b1b1;}
+.product_list li .con .product_price .unit:before{content:'';display:inline-block;width:1px;height:15px;background:#ddd;margin: 0 10px;vertical-align:middle;}
+
+.product_list li.hov .img{}
+.product_list li.hov .img img{transform:scale(0.8); transition: all .22s ease-in-out;}
+.product_list li.hov .img .payment_box{bottom:0px;}
+
+
+.tab_ui.sol .tab{width: 100%;box-shadow:none;}
+.tab_ui.sol .tab ul li{border:0;margin-right:40px;}
+.tab_ui.sol .tab ul li a{font-size:20px;color:#666;line-height:20px;}
+.tab_ui.sol .tab ul li a em{content:'';display:inline-block;width:6px;height:6px;background:#ddd;transform:rotate(45deg);margin-right:10px;vertical-align:middle;}
+.tab_ui.sol .tab ul li.active{border:0 !important;}
+.tab_ui.sol .tab ul li.active a{color:#3d3d3d;}
+.tab_ui.sol .tab ul li.active a em{background:#3d3d3d;}
+
+.tab_ui.sol.fix .tab{position:fixed;top:98px;z-index:2;background:#fff;padding:20px 0;transform: translateX(-50%);box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);left: 50%;}
+.tab_ui.sol.fix .tab ul{width:1320px;margin:0 auto;}
+.tab_ui.sol.fix .tab li{background:#fff;}
+.tab_ui.sol .tab ul li a{background:#fff;}
+.tab_ui.sol.fix .tab_cont{margin-top:200px;}
+
+
+/*서비스*/
+.service.gtd_st .table-type01{}
+.service.gtd_st .table-type01 table{width:100%;max-width:1320px;margin:0 auto;}
+.service.gtd_st .table-type01 table tr th,.service.gtd_st .table-type01 table tr td{text-align:center;padding:15px 10px;}
+.service.gtd_st .table-type01 table tr th .color_red{display:inline-block;vertical-align:top;}
+.service.gtd_st .table-type01 table tr th{font-size:18px;}
+.service.gtd_st .table-type01 table tr td{font-size:16px;}
+.service.gtd_st .table-type01 table tr td span{display:inline-block; vertical-align:middle;font-size:12px !important;text-align:left;}
+.service.gtd_st .table-type01 table tr td .btn_loca{border:1px solid #111;font-size:12px;padding:2px 10px;box-sizing:border-box;margin-left:10px;display:inline-block;vertical-align:middle;margin-left:10px;}
+
+.service.gtd_st .select_outer.x_2 .x_1{width:calc(50% - 5px) !important;}
+.service.gtd_st .select_outer.x_2 .x_1 + .x_1{margin-left:10px;}
+
+.innertable .table-type01 table tr th{text-align:center !important;}
+.innertable .table-type01 table thead tr{border-bottom:2px solid #000;box-sizing:border-box;}
+.innertable .table-type01 table tbody tr{border-bottom:1px solid #c2c2c2;box-sizing:border-box;}
+.innertable .table-type01 table tbody tr th{font-size:12px !important;}
+.innertable .table-type01 table tbody tr td{font-size:12px !important;}
+
+
+/*contact 이메일문의*/ 
+.pagetitle{font-size:40px;font-weight:600;text-align:center;margin-bottom:50px;}
+.btn_faq{background:#000;width:186px;} 
+.btn_faq span{font-size:17px;color:#fff;line-height:60px;}
+.tit_line .btn.btn_faq{float:right;}
+.contact_txt{/*margin:20px auto;*/line-height:26px;}
+.contact_txt p{font-size:16px;padding-bottom:4px;font-weight: 600;}
+.contact_txt .dotlist li{font-size:16px;padding-left:34px;}
+.cal_input input{    width: 220px;
+    background-image: url('../../images/common/cal_icon.png');
+    background-repeat: no-repeat;
+    background-position: 20px 11px;
+    text-align: center;
+    font-size: 18px;
+    color: #888888;}
+
+
+
+
+
+
+/*정품등록*/ 
+.btn_enrollment{background:#000;width:186px;} 
+.btn_enrollment span{font-size:17px;color:#fff;line-height:60px;} 
+.btn_deleteitem{border:1px solid #111;box-sizing:border-box;width:200px;} 
+.btn_deleteitem span{font-size:17px;color:#111;line-height:40px;} 
+
+.registration_list{margin-left:-20px;} 
+.registration_list li{float:left;width:calc(50% - 20px);background:#f8f8f8;margin-left:20px;margin-top:50px;display: flex;align-items: center;} 
+.registration_list li .item_imgbox{width:300px;height:300px;display:flex;justify-content:center;align-items: center;overflow:hidden;} 
+.registration_list li .item_imgbox img{width:80%;} 
+.registration_list li .item_infobox{width:calc(100% - 300px);padding:10px 0;box-sizing:border-box;} 
+.registration_list li .item_infobox .name{font-size:30px;color:#111;font-weight:bold;padding-bottom:24px;} 
+.registration_list li .item_infobox .num, .registration_list li .item_infobox .date{font-size:17px;color:#635f5f;padding-bottom:18px;} 
+.registration_list li .item_infobox .date{padding-bottom:0;}
+.registration_list li .item_infobox .tit{font-weight:600;}
+.registration_list li .btn_deleteitem{margin-top:20px;}
+
+.popupdisplay{width: 100%; height: 100%; background: rgba(0,0,0,0.82); z-index: 1000; position: fixed; display: none; top: 0;}
+.popup_outer{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	z-index: 1001;
+	display: none;
+} 
+.popup_outer .product_popup{width: 1280px;}
+.popup_outer .product_popup_tit{padding: 20px 34px; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; box-sizing: border-box; background: #111;}
+.popup_outer .product_popup_tit p{font-size: 34px; color: #fff; float: left;}
+.popup_outer .product_popup_tit .btn_popupclose{float: right; width: 34px; height: 34px; background: url('../../images/common/close_btn01.png');margin-top:6px;}
+.popup_videosample01{width: 100%;}
+.popup_videosample01[poster]{width: 100%;}
+
+.registration_popup{width: 644px; display: none;}
+.registration_popup .registration_popup_con{background: #fff; padding: 34px;}
+.registration_popup_con .item_imgbox{width: 300px; height: 300px; background: #f8f8f8; float: left;position:relative;}
+.registration_popup_con .item_imgbox img{width: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.registration_popup_con .item_info_selbox{float: left; padding-left: 20px;width:calc(100% - 320px);}
+.registration_popup_con .item_info_selbox div{margin-bottom: 17px;}
+.registration_popup_con .item_info_selbox > div:last-child{margin: 0;}
+.registration_popup_con .item_info_selbox div p{font-size: 17px; padding-bottom: 10px;}
+.registration_popup_con .item_info_selbox div select{padding: 3px 10px 3px 10px; border: 1px solid #c3c3c3; width: 100%; height: 40px;}
+.registration_popup_con .item_info_selbox div select:last-child{margin-bottom: 0;}
+.registration_popup_con .item_info_selbox div input{border: 1px solid #c3c3c3; width: 100%; height: 40px; padding: 3px 10px; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
+.registration_popup_con .iteminfo_guidetxt{font-size: 15px; color: #7d7d7d; padding-top: 20px;}
+.registration_popup_con .btn_wrap{width: 344px; margin: 50px auto 0;}
+.registration_popup_con .btn_wrap .btn{width:50%;}
+.registration_popup_con .btn_wrap .btn span{font-size:15px;line-height:40px;}
+.registration_popup_con .btn_wrap .btn_upload{float: right; color: #fff; background: #000;}
+
+.registration_fin_popup{width: 644px; display: none; border: 1px solid #484848; -webkit-box-sizing: border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
+.registration_fin_popup_con{background: #111; padding: 40px; margin-top: -1px;text-align:center;}
+.registration_fin_popup_con .icon_finimgbox{width: 128px; height: 128px; border-radius: 50%; background: #4d4c4c; position: relative; margin: 0 auto 40px;}
+.registration_fin_popup_con .icon_finimgbox img{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.registration_fin_popup_con ul li{color: #fff; padding-bottom: 10px; text-align: center;}
+.registration_fin_popup_con ul li:first-child{font-size: 26px; padding-bottom: 28px;}
+.registration_fin_popup_con ul li .colortxt{color: #ad7b61;}
+.registration_fin_popup_con .btn_wrap{width: 344px; margin: 50px auto 68px;}
+.registration_fin_popup_con .btn_wrap .btn{width:50%;}
+.registration_fin_popup_con .btn_wrap .btn span{font-size:15px;line-height:40px;}
+.registration_fin_popup_con .btn_wrap .btn_articipation{float: left; color: #fff; background: #ad7b61;}
+.registration_fin_popup_con .btn_wrap .btn_close{float: right; color: #000; background: #fff;}
+
+.upfile{width:100%;margin-top:20px;}
+.upfile .title{font-size:17px;padding-bottom:10px;}
+.upfile .upfilegui{font-size:14px;padding-top:10px;}
+
+
+/* file */
+.fileupload_box .filebox[type="file"] {position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0;}
+.fileupload_box label {float: right; width: 112px; height: 44px; color: #4d4d4d; background-color: #efefef; text-align: center;	cursor: pointer; border: 1px solid #c3c3c3; box-sizing: border-box; line-height: 44px; border-left: 0;font-size:15px;}
+
+/* named upload */
+.fileupload_box .upload_name { float: left;	width: calc(100% - 112px); height: 44px; font-size: 15px; color: #4d4d4d; padding: 3px 24px; background-color: #fff; border: 1px solid #c3c3c3; box-sizing: border-box;}
+
+
+
+
+@media screen and (max-width:1640px) {
+/*정품등록*/
+.inner{width: 95% !important; min-width:inherit ;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+.registration_list li .item_imgbox{width:40%;height:100%;}
+.registration_list li .item_infobox{width:60%;}
+}
+@media screen and (max-width:1200px) {
+/*정품등록*/
+.tit_line .p_title{font-size:30px;margin-bottom:10px;}
+.btn_enrollment span{line-height:40px;}
+.registration_list li .item_infobox .name{font-size:24px;padding-bottom:20px;}
+
+}
+
+@media screen and (max-width:1024px) {
+.product_list{margin-left:-20px;}
+.product_list li{width:calc(50% - 20px);margin-left:20px;}
+.product_list li .con{text-align:center;}
+
+/*정품등록*/
+.registration_list{margin:0 auto;}
+.registration_list li{width:100%;margin:30px auto 0;}
+.registration_list li .item_infobox{padding:20px;}
+.btn_deleteitem{width:100%;}
+}
+
+@media screen and (max-width:720px) {
+.product_list{margin:0 auto;}
+.product_list li{width:100%; margin:30px auto;}
+
+/*정품등록*/
+.tit_line .p_title{font-size:24px;margin-bottom:10px;}
+.btn_enrollment{width:100%;margin-bottom:10px;}
+.btn_enrollment span{line-height:40px;}
+.btn_faq{width:100%;margin-bottom:10px;}
+.btn_faq span{line-height:40px;}
+
+
+
+.popup_outer{width:calc(100% - 40px);max-height: 850px;overflow-y: auto;}
+.registration_popup{width:calc(100% - 40px);max-height: 850px;overflow-y: auto;}
+.registration_popup_con .item_imgbox{width:100%;height: 53.89vw;}
+.registration_popup_con .item_info_selbox{padding-left:0;width:100%;}
+.registration_fin_popup{width:100%;}
+}
+
